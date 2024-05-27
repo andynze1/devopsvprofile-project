@@ -109,14 +109,14 @@ pipeline {
                 )
             }
         }
-        stage('Build App Image') {
+        stage('Build app Docker Image') {
             steps {
                 script {
                     dockerImage = docker.Build( appRegistry + ":$BUILD_NUMBER", "./Docker-files/app/multistage")
                 }
             }
         }
-        stage('Upload App Image') {
+        stage('Upload app Docker Image') {
             steps{
                 script {
                     docker.WithRegistry( vprofileRegistry, registryCredential ) {
