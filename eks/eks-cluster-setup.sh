@@ -1,6 +1,6 @@
 # Variables
 CLUSTER_NAME=vprofile-eks-cluster
-REGION=us-east-2
+REGION=us-east-1
 NODE_NAME=Linux-nodes
 KEY_NAME=vprofile-eks-key
 
@@ -14,7 +14,7 @@ then
   # Creation of EKS cluster
   eksctl create cluster \
   --name $CLUSTER_NAME \
-  --version 1.20 \
+  --version 1.17 \
   --region $REGION \
   --nodegroup-name $NODE_NAME \
   --nodes 2 \

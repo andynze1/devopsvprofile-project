@@ -1,1 +1,1 @@
-{"name":"ubuntu/bionic64","version":"20200908.0.0","provider":"virtualbox","directory":"boxes/ubuntu-VAGRANTSLASH-bionic64/20200908.0.0/virtualbox"}
+{"name":"bento/ubuntu-20.04-arm64","version":"20200908.0.0","provider":"virtualbox","directory":"boxes/ubuntu-VAGRANTSLASH-ubuntu-20.04-arm64/20200908.0.0/virtualbox"}
